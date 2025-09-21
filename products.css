@@ -484,23 +484,3 @@ h5 {
 .mobile-menu-toggle {
     display: none;
 }
-/* --- 手機版葉片顯示修正 (Flexbox 版本) --- */
-
-@media (max-width: 768px) { /* 只在手機寬度下生效 */
-  .story-content {
-    display: flex;
-    align-items: center; /* 垂直置中 */
-    justify-content: center; /* 水平置中 */
-  }
-
-  .leaf-decoration {
-    display: block !important; /* 強制顯示 */
-    flex-shrink: 0; /* 防止葉片被過度壓縮 */
-    width: 30px; /* 設定一個較小的寬度 */
-    height: auto;
-  }
-  
-  .story-text {
-    margin: 0 10px; /* 讓文字和葉片之間有點間距 */
-  }
-}
