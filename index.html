@@ -1,156 +1,249 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I need this 品牌介紹</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="all.css">
-  <link rel="stylesheet" href="products.css">
-</head>
-<body>
-<header class="main-header">
-        <div class="container">
-            <div class="top-bar">
-                <a href="/" class="logo">
-                    <img src="logo_on light.svg" alt="I need this Logo">
-                </a>
-
-                <div class="header-center">
-                    <form class="search-form" action="/search" method="get">
-                        <input type="text" placeholder="輸入商品名稱">
-                        <button type="submit" aria-label="搜尋">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                        </button>
-                    </form>
-                    <nav class="main-nav">
-                        <ul>
-                            <li><a href="#">品牌介紹</a></li>
-                            <li><a href="#">所有商品</a></li>
-                        </ul>
-                    </nav>
-                </div>
-<div class="header-actions">
-    <button class="mobile-menu-toggle" aria-label="開啟選單">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-    </button>
-    <a href="/cart" class="cart-link" aria-label="購物車">
-        </a>
-    <a href="#" class="btn btn-primary">註冊 / 登入</a>
-</div>
-                <div class="header-actions">
-                    <a href="/cart" class="cart-link" aria-label="購物車">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                    </a>
-                    <a href="#" class="btn btn-primary">註冊 / 登入</a>
-                </div>
-            </div>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I need this 品牌介紹</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="top-bar">
+          <a href="/" class="logo">
+            <img src="logo_on light.svg" alt="I need this Logo" />
+          </a>
+          <div class="header-actions">
+            <form class="search-form" action="/search" method="get">
+              <input type="text" placeholder="輸入商品名稱" />
+              <button type="submit" aria-label="搜尋">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </button>
+            </form>
+            <nav class="main-nav">
+              <a href="#" class="nav-link">品牌介紹</a>
+              <a href="#" class="nav-link">所有商品</a>
+            </nav>
+            <a href="/cart" class="cart-link" aria-label="購物車">
+              <img src="Cart.svg" alt="購物車圖示" width="24" height="24" />
+            </a>
+            <a href="#" class="btn btn-primary">註冊 / 登入</a>
+            <a href="#" class="mobile-search-toggle" aria-label="搜尋">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="開啟選單">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+          </div>
         </div>
+      </div>
     </header>
-<div class="main-content-wrapper" style="background-image: url('bgc-img-02.png'); background-size: cover; background-position: center; background-attachment: fixed;"> 
-<div class="container">
+
+    <div
+      class="main-content-wrapper"
+      style="
+        background-image: url('bgc-img-02.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      "
+    >
+      <div class="container">
         <div class="breadcrumb">
-            <a href="#">首頁</a> &gt; <a href="#">品牌介紹</a>
+          <a href="#">首頁</a> &gt; <a href="#">品牌介紹</a>
         </div>
-    </div>
-    <main>
+      </div>
+      <main>
         <div class="hero-image-wrapper">
-             <img src="work space.png" alt="辦公室橫幅圖片" class="hero-image">
-             </div>
+          <img src="work space.png" alt="辦公室橫幅圖片" class="hero-image" />
+        </div>
+
+        <section class="intro-section">
+          <div class="container">
+            <h2 class="intro-heading">I need this.</h2>
+            <p>是一個關於渴望、關於選擇的品牌。</p>
+            <p>
+              我們相信，生活中的每一個物件都應該是你的心之所向，發自內心的一句「我想要這個」。
+            </p>
+            <p>
+              我們致力於為你挑選、打造那些能點亮日常、提升生活品質，並能讓你產生強烈共鳴的質感好物。
+            </p>
+          </div>
+        </section>
 
         <div class="container">
-            <section class="brand-story">
-                <h3>品牌故事</h3>
-                <div class="story-content">
-                     <img src="graphic-05.svg" alt="左側橄欖葉裝飾" class="leaf-decoration">
-                     <div class="story-text">
-                        <p class="brand-name">I need this.</p>
-                        <p>是一個關於愛、希望、連結的質感選物品牌。</p>
-                        <p>我們相信，生活中的每一個物件都應該是你喜愛的樣子，發自內心的一句「我想要這個」。</p>
-                        <p>我們致力於為你發掘，那些能為你的日常注入能量與共鳴的好物件。</p>
-                    </div>
-                     <img src="graphic-06.svg" alt="右側橄欖葉裝飾" class="leaf-decoration">
-                     </div>
-            </section>
+          <section class="brand-story">
+            <h3>品牌故事</h3>
+            <div class="story-content">
+              <img
+                src="graphic-05.svg"
+                alt="左側橄欖葉裝飾"
+                class="leaf-decoration"
+              />
+              <div class="story-text">
+                <p class="brand-name">I need this.</p>
+                <p>是一個關於愛、希望、連結的質感選物品牌。</p>
+                <p>
+                  我們相信，生活中的每一個物件都應該是你喜愛的樣子，發自內心的一句「我想要這個」。
+                </p>
+                <p>
+                  我們致力於為你發掘，那些能為你的日常注入能量與共鳴的好物件。
+                </p>
+              </div>
+              <img
+                src="graphic-06.svg"
+                alt="右側橄欖葉裝飾"
+                class="leaf-decoration"
+              />
+            </div>
+          </section>
 
-            <section class="content-section">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <h4>生活小物，點亮日常</h4>
-                        <p>有趣味的杯盤器皿、舒適的織品、一瓶香氣療癒的精油，它們不只是物件，更是乘載著一段故事與溫度的生活之物，為你的儀式感優雅加分。</p>
-                        <h5>療癒時光</h5>
-                        <p>我們的選品核心理念，是讓每一個商品都能讓你打從心底感到喜悅。透過設計師的創意與匠人精神，打造兼具美感與實用性的質感好物，從居家香氛到辦公小物，都希望我們的選品能打開你的五感，感受工藝之美，找到屬於你的靜好時光。</p>
-                    </div>
-                    <div class="col-6">
-                         <img src="brandimg1.jpg" alt="生活小物圖片">
-                         </div>
-                </div>
-            </section>
+          <section class="content-section">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <h4>生活小物，點亮日常</h4>
+                <p>
+                  有趣味的杯盤器皿、舒適的織品、一瓶香氣療癒的精油，它們不只是物件，更是乘載著一段故事與溫度的生活之物，為你的儀式感優雅加分。
+                </p>
+                <h5>療癒時光</h5>
+                <p>
+                  我們的選品核心理念，是讓每一個商品都能讓你打從心底感到喜悅。透過設計師的創意與匠人精神，打造兼具美感與實用性的質感好物，從居家香氛到辦公小物，都希望我們的選品能打開你的五感，感受工藝之美，找到屬於你的靜好時光。
+                </p>
+                <img
+                  src="brandimg1.jpg"
+                  alt="生活小物圖片"
+                  class="content-image"
+                />
+              </div>
+              <div class="col-6 desktop-image-wrapper">
+                <img src="brandimg1.jpg" alt="生活小物圖片" />
+              </div>
+            </div>
+          </section>
+          <section class="content-section">
+            <div class="row align-items-center">
+              <div class="col-6 desktop-image-wrapper">
+                <img src="brandimg2.jpg" alt="匠人精神圖片" />
+              </div>
+              <div class="col-6">
+                <h4>匠人精神，注入溫潤情感</h4>
+                <h5>堅持手作</h5>
+                <p>
+                  I need this.
+                  堅持手作的溫度與匠人精神的堅持，我們相信，一件件注入了靈魂的非凡藝品，它就不再只是日常用品，而是一段有溫度、有感情的藝術延續。
+                </p>
+                <h5>質感體驗</h5>
+                <p>
+                  從材質的挑選，到內外包裝及命名都別具巧思。我們與來自世界各地的製造商合作，從原料、設計到製作，每一個環節都堅持最高標準，為您帶來獨一無二的溫潤手感。
+                </p>
+                <img
+                  src="brandimg2.jpg"
+                  alt="匠人精神圖片"
+                  class="content-image"
+                />
+              </div>
+            </div>
+          </section>
 
-            <section class="content-section">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                         <img src="brandimg2.jpg" alt="匠人精神圖片">
-                         </div>
-                    <div class="col-6">
-                        <h4>匠人精神，注入溫潤情感</h4>
-                        <h5>堅持手作</h5>
-                        <p>I need this. 堅持手作的溫度與匠人精神的堅持，我們相信，一件件注入了靈魂的非凡藝品，它就不再只是日常用品，而是一段有溫度、有感情的藝術延續。</p>
-                        <h5>質感體驗</h5>
-                        <p>從材質的挑選，到內外包裝及命名都別具巧思。我們與來自世界各地的製造商合作，從原料、設計到製作，每一個環節都堅持最高標準，為您帶來獨一無二的溫潤手感。</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="closing-text">
-                <p>在 I need this，</p>
-                <p>我們的商品、憑藉著使用者口耳相傳的口碑，</p>
-                <p>成為了許多人生活中「用過就不想換回去」的必備好物。</p>
-                 <img src="graphic-08.svg" alt="裝飾小圖" class="small-icon">
-                 </section>
+          <section class="closing-text">
+            <p>在 I need this，</p>
+            <p>我們的商品、憑藉著使用者口耳相傳的口碑，</p>
+            <p>成為了許多人生活中「用過就不想換回去」的必備好物。</p>
+            <img src="graphic-08.svg" alt="裝飾小圖" class="small-icon" />
+          </section>
         </div>
-    </main>
-</div>
-<footer class="main-footer">
-    <div class="container">
+      </main>
+    </div>
+
+    <footer class="main-footer">
+      <div class="container">
         <div class="row">
-            <div class="col-4 footer-about">
-                <a href="/" class="logo">
-                    <img src="logo_on light.svg" alt="I need this Logo">
-                </a>
-                <div class="social-icons">
-                    <a href="#"><img src="instagram.svg" alt="Instagram"></a>
-                    <a href="#"><img src="youtube.svg" alt="YouTube"></a>
-                    <a href="#"><img src="facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="tiktok.svg" alt="TikTok"></a>
-                </div>
+          <div class="col-4 footer-about">
+            <a href="/" class="logo">
+              <img src="logo_on dark.svg" alt="I need this Logo" />
+            </a>
+            <div class="social-icons">
+              <a href="#"><img src="instagram.svg" alt="Instagram" /></a>
+              <a href="#"><img src="youtube.svg" alt="YouTube" /></a>
+              <a href="#"><img src="facebook.svg" alt="Facebook" /></a>
+              <a href="#"><img src="tiktok.svg" alt="TikTok" /></a>
             </div>
-            <div class="col-2">
-                <h3>關於</h5>
-                <ul>
-                    <li><a href="#">關於我們</a></li>
-                    <li><a href="#">隱私政策</a></li>
-                    <li><a href="#">免責聲明</a></li>
-                </ul>
-            </div>
-            <div class="col-2">
-                <h3>服務</h5>
-                <ul>
-                    <li><a href="#">廣告合作</a></li>
-                </ul>
-            </div>
-            <div class="col-4">
-                <h3>聯絡方式</h5>
-                <p>連絡電話: 0988-999-000</p>
-                <p>信箱: INeedThis@gmail.com</p>
-            </div>
+          </div>
+          <div class="col-2">
+            <h3>關於</h3>
+            <ul>
+              <li><a href="#">關於我們</a></li>
+              <li><a href="#">隱私政策</a></li>
+              <li><a href="#">免責聲明</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h3>服務</h3>
+            <ul>
+              <li><a href="#">廣告合作</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>聯絡方式</h3>
+            <p>連絡電話: 0988-999-000</p>
+            <p>信箱: INeedThis@gmail.com</p>
+          </div>
         </div>
-    </div>
-        <div class="copyright">
-            <p>Copyright © 2025 All Rights Reserved.</p>
-    </div>
-</footer>
-</body>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2025 All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
