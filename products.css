@@ -484,3 +484,51 @@ h5 {
 .mobile-menu-toggle {
     display: none;
 }
+/* --- 手機版葉片顯示修正 --- */
+
+/* 1. 建立定位參考點 */
+.story-content {
+  position: relative;
+  padding: 0 40px; /* 增加左右內距，給葉片留出空間 */
+  text-align: center; /* 確保文字內容置中 */
+}
+
+/* 2. 讓葉片在所有尺寸都顯示，並設定基本樣式 */
+.leaf-decoration {
+  display: block !important; /* 強制顯示葉片 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* 垂直置中 */
+  width: 50px; /* 預設葉片寬度，可調整 */
+  height: auto;
+  opacity: 0.6; /* 可選：讓葉片淡一點，不搶走文字風采 */
+}
+
+/* 3. 定位左、右兩個葉片 */
+.story-content img[src*="graphic-05.svg"] { /* 選取左葉片 */
+  left: -10px; /* 靠左，可微調 */
+}
+
+.story-content img[src*="graphic-06.svg"] { /* 選取右葉片 */
+  right: -10px; /* 靠右，可微調 */
+}
+
+
+/* 4. 針對手機螢幕進行微調 (假設手機斷點為 768px) */
+@media (max-width: 768px) {
+  .story-content {
+    padding: 0 25px; /* 手機上內距可以小一點 */
+  }
+
+  .leaf-decoration {
+    width: 30px; /* 手機上葉片縮小一點 */
+  }
+  
+  .story-content img[src*="graphic-05.svg"] {
+    left: 0; /* 調整手機上的位置 */
+  }
+
+  .story-content img[src*="graphic-06.svg"] {
+    right: 0; /* 調整手機上的位置 */
+  }
+}
