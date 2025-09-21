@@ -235,18 +235,16 @@ h5 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* --- 7. 響應式樣式 (RWD) --- */
+/* --- 7. 通用響應式樣式 (RWD) --- */
 
-/* ★★★ 手機版 Header 修正處 ★★★ */
-
-/* 預設隱藏手機專用的圖示 */
+/* 手機版 Header 修正 */
 .mobile-menu-toggle,
 .mobile-search-toggle {
   display: none;
 }
 
 @media (max-width: 992px) {
-  /* 在平板和手機尺寸下，隱藏桌面版的項目 */
+  /* 在平板和手機尺寸下，隱藏桌面版的 Header 項目 */
   .search-form,
   .main-nav,
   .header-actions .cart-link,
@@ -254,7 +252,7 @@ h5 {
     display: none;
   }
 
-  /* 在平板和手機尺寸下，顯示手機專用的圖示 */
+  /* 在平板和手機尺寸下，顯示手機專用的 Header 圖示 */
   .mobile-menu-toggle,
   .mobile-search-toggle {
     display: inline-flex;

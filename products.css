@@ -77,14 +77,18 @@
   width: 150px;
 }
 
-/* ★★★ 修正重複顯示問題的關鍵 ★★★ */
+/* 控制桌面版/手機版內容顯示切換 */
 /* 預設(桌面版)狀態下，隱藏手機專用的元素 */
 .intro-section,
 .content-image {
   display: none;
 }
+/* 桌面版專用圖片容器 */
+.desktop-image-wrapper {
+  display: block;
+}
 
-/* --- 2. 響應式樣式 (RWD) --- */
+/* --- 2. 專用響應式樣式 (RWD) --- */
 @media (max-width: 768px) {
   .breadcrumb {
     padding: 20px 0;
@@ -166,7 +170,7 @@
     z-index: 1;
   }
 
-  /* 顯示手機版圖片，並隱藏桌面版圖片 */
+  /* 在手機版，隱藏桌面圖片並顯示手機圖片 */
   .desktop-image-wrapper {
     display: none;
   }
