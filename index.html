@@ -12,36 +12,38 @@
   <link rel="stylesheet" href="products.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <div class="top-bar">
-                <a href="/" class="logo">
-                    <img src="logo_on light.svg" alt="I need this Logo">
+   <header class="main-header">
+    <div class="container">
+        <div class="top-bar">
+            <a href="/" class="logo">
+                <img src="logo_on light.svg" alt="I need this Logo">
+            </a>
+            <div class="header-center">
+                <form class="search-form" action="/search" method="get">
+                    <input type="text" placeholder="輸入商品名稱">
+                    <button type="submit" aria-label="搜尋">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </form>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">品牌介紹</a></li>
+                        <li><a href="#">所有商品</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-actions">
+                <button class="mobile-menu-toggle" aria-label="開啟選單">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+                <a href="/cart" class="cart-link" aria-label="購物車">
+                    <img src="Cart.svg" alt="購物車" width="24" height="24">
                 </a>
-                <div class="header-center">
-                    <form class="search-form" action="/search" method="get">
-                        <input type="text" placeholder="輸入商品名稱">
-                        <button type="submit" aria-label="搜尋">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                        </button>
-                    </form>
-                    <nav class="main-nav">
-                        <ul>
-                            <li><a href="#">品牌介紹</a></li>
-                            <li><a href="#">所有商品</a></li>
-                        </ul>
-                    </nav>
-                </div>
-<div class="header-actions">
-    <button class="mobile-menu-toggle" aria-label="開啟選單">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-    </button>
-    <a href="/cart" class="cart-link" aria-label="購物車">
-        <img src="Cart.svg" alt="購物車" width="24" height="24">
-    </a>
-    <a href="#" class="btn btn-primary">註冊 / 登入</a>
-</div>
-    </header>
+                <a href="#" class="btn btn-primary">註冊 / 登入</a>
+            </div>
+        </div>
+    </div>
+</header>
 <div class="main-content-wrapper" style="background-image: url('bgc-img-02.png'); background-size: cover; background-position: center; background-attachment: fixed;"> 
 <div class="container">
         <div class="breadcrumb">

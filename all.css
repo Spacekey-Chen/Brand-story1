@@ -1,56 +1,14 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 | License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+*, *::before, *::after { box-sizing: border-box; }
 
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*顏色*/
-/* --- 1. 變數定義 --- */
+/* --- 變數定義 --- */
 :root {
     --color-primary-50: #e3efe8;
     --color-primary-100: #598e71;
@@ -64,12 +22,7 @@ table {
     --font-sans: 'Noto Sans TC', sans-serif;
 }
 
-/* --- 2. 基本與重置樣式 --- */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* --- 基本樣式 --- */
 body {
     font-family: var(--font-sans);
     background-color: var(--color-neutral-0);
@@ -87,12 +40,8 @@ img {
     height: auto;
     display: block;
 }
-ul {
-    list-style: none;
-}
 
-/* --- 6. 區塊樣式 --- */
-/* ======== Header (包含所有修正的最終版本) ======== */
+/* --- Header (最終修正版) --- */
 .main-header {
     background-color: var(--color-neutral-0);
     border-bottom: 1px solid var(--color-neutral-20);
@@ -105,17 +54,17 @@ ul {
 .top-bar {
     display: flex;
     align-items: center;
-    height: 75px; /* 設定導覽列固定高度 */
+    height: 75px;
 }
 .logo img {
     height: 45px;
-    display: block; /* 確保圖片對齊 */
+    display: block;
 }
 .header-center {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-left: auto; /* 改為 auto 自動推擠 */
+    margin-left: auto; /* 將 logo 推到最左邊 */
 }
 .search-form {
     display: flex;
@@ -143,22 +92,22 @@ ul {
     display: flex;
     align-items: center;
     gap: 25px;
-    margin-left: 40px; /* 新增左邊間距 */
+    margin-left: 40px;
     align-self: stretch; /* 關鍵：讓此區塊自我伸展 */
 }
 .header-actions .btn-primary {
-    height: 100%; /* 關鍵：高度填滿父層 */
-    border-radius: 0; /* 關鍵：移除圓角 */
+    height: 100%;       /* 關鍵：高度填滿父層 */
+    border-radius: 0;   /* 關鍵：移除圓角 */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 24px; /* 設定左右 padding */
+    padding: 0 24px;
 }
 .mobile-menu-toggle {
-    display: none; /* 桌面版隱藏 */
+    display: none;
 }
 
-/* --- 5. 元件樣式 (保留您的設定) --- */
+/* --- 元件樣式 --- */
 .btn {
     font-family: var(--font-serif);
     padding: 10px 24px;
