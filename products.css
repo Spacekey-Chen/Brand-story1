@@ -5,8 +5,6 @@
   background-position: center;
   background-attachment: fixed;
 }
-
-/* 麵包屑 */
 .breadcrumb {
   padding: 40px 0;
   font-size: 14px;
@@ -18,8 +16,6 @@
 .breadcrumb a:last-child {
   color: var(--color-primary-dark);
 }
-
-/* 英雄圖片 */
 .hero-image-wrapper {
   height: 450px;
   overflow: hidden;
@@ -29,8 +25,6 @@
   height: 100%;
   object-fit: cover;
 }
-
-/* 品牌故事、內容區塊 */
 .brand-story,
 .content-section,
 .closing-text {
@@ -44,7 +38,7 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 120%;
-  color: var(--color-primary-dark); /* 顏色調整為深色以利閱讀 */
+  color: var(--color-primary-dark);
   margin-bottom: 30px;
 }
 .story-content {
@@ -79,8 +73,15 @@
 .closing-text .small-icon {
   position: absolute;
   top: 10px;
-  right: 250px; /* 這可能需要依據最終版面調整 */
+  right: 250px;
   width: 150px;
+}
+
+/* ★★★ 修正重複顯示問題的關鍵 ★★★ */
+/* 預設(桌面版)狀態下，隱藏手機專用的元素 */
+.intro-section,
+.content-image {
+  display: none;
 }
 
 /* --- 2. 響應式樣式 (RWD) --- */
@@ -105,14 +106,75 @@
   .content-section .row {
     flex-direction: column;
   }
-  /* 讓圖片總是在文字上方 */
-  .content-section .row .col-6:has(img) {
-    order: -1;
-  }
   .closing-text .small-icon {
     display: none;
   }
   .closing-text {
     font-size: 16px;
+  }
+
+  /* 顯示手機版專屬介紹區塊 */
+  .intro-section {
+    display: block;
+    background-color: transparent;
+    padding: 20px;
+    margin: 24px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .intro-heading {
+    color: var(--color-primary-dark);
+    font-family: var(--font-serif);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .intro-section p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--color-neutral-80);
+    text-align: left;
+  }
+  .intro-section .container {
+    padding: 0;
+  }
+  .intro-section::before,
+  .intro-section::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: 0;
+  }
+  .intro-section::before {
+    background-image: url("graphic-05.svg");
+    bottom: -20px;
+    left: -10px;
+  }
+  .intro-section::after {
+    background-image: url("graphic-05.svg");
+    bottom: -20px;
+    right: -10px;
+    transform: scaleX(-1);
+  }
+  .intro-section .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* 顯示手機版圖片，並隱藏桌面版圖片 */
+  .desktop-image-wrapper {
+    display: none;
+  }
+  .content-image {
+    display: block;
+    margin-top: 24px;
+  }
+  .content-section .col-6 {
+    width: 100%;
   }
 }
